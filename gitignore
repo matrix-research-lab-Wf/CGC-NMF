@@ -1,0 +1,15 @@
+# MATLAB temporary files
+*.asv
+*.autosave
+*.m~
+
+# MATLAB cache
+slprj/
+codegen/
+
+# Datasets
+*.mat
+data/
+
+# Temporary experimental outputs
+*.log
