@@ -1,0 +1,18 @@
+% Requires booktabs.
+\begin{table*}[t]
+\centering
+\caption{End-to-end running time in seconds. Each value is the mean $\pm$ standard deviation over paired trials and includes method-specific graph construction, calibration when applicable, and matrix factorization. Common data loading and normalization are excluded.}\label{tab:end_to_end_time}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lccc}
+\toprule
+Dataset & GNMFLD & GOCNMF & CGC-GOCNMF \\
+\midrule
+PIE & $10.719\pm0.490$ & $4.068\pm0.198$ & $4.504\pm0.426$ \\
+YaleB & $5.981\pm0.626$ & $2.385\pm0.251$ & $2.407\pm0.209$ \\
+COIL20 & $3.057\pm0.036$ & $1.133\pm0.016$ & $1.172\pm0.024$ \\
+COIL100 & $49.974\pm7.103$ & $25.014\pm3.619$ & $28.542\pm3.892$ \\
+Optdigits & $8.131\pm0.437$ & $7.720\pm0.344$ & $7.872\pm0.152$ \\
+MNIST & $22.143\pm4.320$ & $17.492\pm3.066$ & $18.571\pm3.548$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

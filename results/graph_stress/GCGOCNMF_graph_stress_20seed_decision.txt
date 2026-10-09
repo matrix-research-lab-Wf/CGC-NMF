@@ -1,0 +1,18 @@
+Controlled graph-reliability stress test
+Dataset: COIL100
+Runs: 20
+Corruption preserves graph support, symmetry, nonnegativity, and the edge-weight distribution.
+
+rho=0.0: edge_corr=+1.000000, distortion=0.000000, theta=0.903400, delta=0.057361, se=0.005504, dACC candidate/shrink=+0.027092/+0.024715, losses=0/0, dNMI candidate/shrink=+0.017685/+0.016281, losses=0/0
+rho=0.2: edge_corr=+0.970144, distortion=0.115530, theta=0.922576, delta=0.034259, se=0.002623, dACC candidate/shrink=+0.020038/+0.017531, losses=0/0, dNMI candidate/shrink=+0.013269/+0.011619, losses=0/0
+rho=0.4: edge_corr=+0.832049, distortion=0.231059, theta=0.914641, delta=0.021328, se=0.001796, dACC candidate/shrink=+0.012169/+0.010962, losses=0/0, dNMI candidate/shrink=+0.007903/+0.007159, losses=0/0
+rho=0.6: edge_corr=+0.554673, distortion=0.346589, theta=0.869181, delta=0.011855, se=0.001496, dACC candidate/shrink=+0.005077/+0.004546, losses=0/1, dNMI candidate/shrink=+0.003287/+0.003019, losses=0/0
+rho=0.8: edge_corr=+0.242504, distortion=0.462119, theta=0.489202, delta=0.003766, se=0.001580, dACC candidate/shrink=-0.001685/+0.000738, losses=14/5, dNMI candidate/shrink=-0.001274/+0.000542, losses=14/3
+rho=1.0: edge_corr=-0.000015, distortion=0.577648, theta=0.018384, delta=-0.004538, se=0.002195, dACC candidate/shrink=-0.011254/+0.000023, losses=20/0, dNMI candidate/shrink=-0.007667/+0.000017, losses=20/0
+
+STRESS_FINITE_PASS=1
+CORRUPTION_CONSTRUCTION_PASS=1
+TREND_RESPONSE_PASS=1
+RISK_CONTROL_PASS=1
+STRESS_MECHANISM_PASS=1
+TWENTY_SEED_STRESS_PASS=1

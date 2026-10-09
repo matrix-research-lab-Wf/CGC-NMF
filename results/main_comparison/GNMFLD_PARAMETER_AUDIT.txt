@@ -1,0 +1,23 @@
+GNMFLD parameter audit
+
+The GNMFLD objective and multiplicative updates are directly reproduced.
+
+Verified method-level settings:
+- binary p-nearest-neighbor graph
+- p = 5 in the GOCNMF comparison protocol
+- 200 iterations
+- direct argmax prediction
+
+Dataset parameter pairs used:
+PIE       alpha=100000 beta=10      published follow-up baseline
+YaleB     alpha=100000 beta=100     published follow-up baseline
+COIL20    alpha=10000  beta=10      published follow-up baseline
+MNIST     alpha=100000 beta=10      published follow-up baseline
+COIL100   alpha=10000  beta=10      explicit transfer from COIL20
+Optdigits alpha=100000 beta=10      explicit transfer from MNIST
+
+Editorial consequence:
+The unified comparison is executable and transparent, but the COIL100 and
+Optdigits GNMFLD rows should not be described as exact original-paper parameter
+replications unless the author code or original parameter table is later
+verified. No unlabeled ground-truth label is used for parameter selection.

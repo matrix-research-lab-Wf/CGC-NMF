@@ -1,0 +1,10 @@
+Minimal three-dataset GCGOCNMF ablation
+Runs per dataset: 3
+
+COIL100: theta=0.912599, dACC local/hard/shrink=+0.028205/+0.028205/+0.026769, ACC losses=0/0/0, dNMI local/hard/shrink=+0.019370/+0.019370/+0.018653, NMI losses=0/0/0
+PIE: theta=0.000000, dACC local/hard/shrink=-0.018576/+0.000000/+0.000000, ACC losses=3/0/0, dNMI local/hard/shrink=-0.008841/+0.000000/+0.000000, NMI losses=3/0/0
+YaleB: theta=0.021110, dACC local/hard/shrink=-0.039933/-0.018595/+0.000305, ACC losses=3/1/0, dNMI local/hard/shrink=-0.030775/-0.014545/+0.000076, NMI losses=3/1/0
+
+CV_FINITE_PASS=1
+SHRINK_SAFETY_PASS=1
+ABLATION_MECHANISM_PASS=1

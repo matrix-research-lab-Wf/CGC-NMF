@@ -1,0 +1,32 @@
+NEU-CLS engineering application -- Stage 1
+Runs per label fraction: 1
+Primary metrics: unlabeled ACC, NMI, ARI
+Direct row-wise argmax; K-means used: NO
+
+Label 5% GNMFLD: ACC=0.273099+-0.000000, NMI=0.097134+-0.000000, ARI=0.023848+-0.000000, labeled_ACC=1.000000, theta=NaN, fallback=0/1
+Label 5% GOCNMF: ACC=0.285380+-0.000000, NMI=0.106549+-0.000000, ARI=0.026991+-0.000000, labeled_ACC=1.000000, theta=NaN, fallback=0/1
+Label 5% CGC-GOCNMF: ACC=0.285380+-0.000000, NMI=0.106549+-0.000000, ARI=0.026991+-0.000000, labeled_ACC=1.000000, theta=0.000000, fallback=1/1
+  CGC-GOCNMF_minus_GOCNMF: dACC=+0.000000 (0/1/0), dNMI=+0.000000 (0/1/0), dARI=+0.000000 (0/1/0)
+  CGC-GOCNMF_minus_GNMFLD: dACC=+0.012281 (1/0/0), dNMI=+0.009416 (1/0/0), dARI=+0.003144 (1/0/0)
+
+Label 10% GNMFLD: ACC=0.383333+-0.000000, NMI=0.158742+-0.000000, ARI=0.088845+-0.000000, labeled_ACC=1.000000, theta=NaN, fallback=0/1
+Label 10% GOCNMF: ACC=0.378395+-0.000000, NMI=0.154243+-0.000000, ARI=0.082788+-0.000000, labeled_ACC=1.000000, theta=NaN, fallback=0/1
+Label 10% CGC-GOCNMF: ACC=0.396914+-0.000000, NMI=0.186439+-0.000000, ARI=0.100534+-0.000000, labeled_ACC=1.000000, theta=0.641063, fallback=0/1
+  CGC-GOCNMF_minus_GOCNMF: dACC=+0.018519 (1/0/0), dNMI=+0.032196 (1/0/0), dARI=+0.017746 (1/0/0)
+  CGC-GOCNMF_minus_GNMFLD: dACC=+0.013580 (1/0/0), dNMI=+0.027697 (1/0/0), dARI=+0.011690 (1/0/0)
+
+Label 20% GNMFLD: ACC=0.383333+-0.000000, NMI=0.163426+-0.000000, ARI=0.095278+-0.000000, labeled_ACC=1.000000, theta=NaN, fallback=0/1
+Label 20% GOCNMF: ACC=0.377083+-0.000000, NMI=0.160760+-0.000000, ARI=0.089333+-0.000000, labeled_ACC=1.000000, theta=NaN, fallback=0/1
+Label 20% CGC-GOCNMF: ACC=0.436806+-0.000000, NMI=0.231045+-0.000000, ARI=0.131733+-0.000000, labeled_ACC=1.000000, theta=0.828013, fallback=0/1
+  CGC-GOCNMF_minus_GOCNMF: dACC=+0.059722 (1/0/0), dNMI=+0.070285 (1/0/0), dARI=+0.042400 (1/0/0)
+  CGC-GOCNMF_minus_GNMFLD: dACC=+0.053472 (1/0/0), dNMI=+0.067619 (1/0/0), dARI=+0.036455 (1/0/0)
+
+Audit
+FINITE_RESULTS_PASS=1
+OBJECTIVE_NONINCREASE_PASS=1
+GOC_FIXED_LABEL_PASS=1
+NO_KMEANS_PASS=1
+NEU_APPLICATION_INTEGRITY_PASS=1
+NEU_ONE_SEED_SMOKE_PASS=1
+
+Stage-1 limitation: parameters are pre-specified pilot settings. No unlabeled ground-truth label is used for tuning. Publication claims require the actual 20-seed results and audit.

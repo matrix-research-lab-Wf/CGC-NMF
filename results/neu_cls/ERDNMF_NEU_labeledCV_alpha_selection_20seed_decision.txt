@@ -1,0 +1,21 @@
+ERDNMF NEU-CLS LABELED-ONLY ALPHA-SELECTION AUDIT
+pilot_seeds=20260711-20260730
+formal_seeds_excluded=20260731-20260750
+label_rates=0.05 0.10 0.20
+validation=five-fold stratified validation inside labeled samples
+unlabeled_ground_truth_used=0
+iterations=200
+candidate_alphas=1 10 100 1000 10000 
+selection_rule=maximum pooled mean held-out ACC among candidates passing all objective-nonincreasing audits; smaller alpha on exact tie
+
+alpha=1 ACC=0.188611+-0.077813 NMI=0.301538+-0.135142 ACC05=0.182222 ACC10=0.182222 ACC20=0.201389 train_ACC=0.551933 objective_nonincrease=300/300 time=8.809s
+alpha=10 ACC=0.204583+-0.081451 NMI=0.302467+-0.127665 ACC05=0.176111 ACC10=0.205278 ACC20=0.232361 train_ACC=0.731481 objective_nonincrease=300/300 time=8.616s
+alpha=100 ACC=0.226574+-0.077036 NMI=0.313246+-0.127362 ACC05=0.213889 ACC10=0.220278 ACC20=0.245556 train_ACC=0.999363 objective_nonincrease=300/300 time=8.590s
+alpha=1000 ACC=0.237407+-0.083052 NMI=0.322532+-0.130002 ACC05=0.228333 ACC10=0.231389 ACC20=0.252500 train_ACC=1.000000 objective_nonincrease=300/300 time=8.641s
+alpha=10000 ACC=0.237315+-0.083657 NMI=0.321828+-0.129245 ACC05=0.229444 ACC10=0.230556 ACC20=0.251944 train_ACC=1.000000 objective_nonincrease=0/300 time=8.760s
+
+SELECTED_ALPHA=1000
+SELECTED_ACC=0.237407
+FINITE_OUTPUT_PASS=1
+OBJECTIVE_ADMISSIBLE_CANDIDATE_PASS=1
+FINAL_READY=1

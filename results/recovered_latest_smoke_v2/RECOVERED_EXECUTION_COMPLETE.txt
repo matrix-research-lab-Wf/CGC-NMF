@@ -1,0 +1,2 @@
+RECOVERED_SCRIPTS_EXECUTED=1
+NOTE=This marker confirms execution only; inspect each decision file for scientific acceptance gates.

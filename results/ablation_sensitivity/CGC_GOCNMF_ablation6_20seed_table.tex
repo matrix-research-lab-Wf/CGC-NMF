@@ -1,0 +1,38 @@
+\begin{table*}[t]
+\centering
+\caption{Six-dataset ablation of local weighting and conservative calibration.}\label{tab:ablation6}
+\small
+\begin{tabular}{llrrc}
+\toprule
+Dataset & Variant & $\Delta$ACC & $\Delta$NMI & ACC/NMI losses \\
+\midrule
+\multirow{3}{*}{PIE} & LOCAL & -1.558 & -0.761 & 20/20 \\
+& HARD & +0.000 & +0.000 & 0/0 \\
+& SHRINK & +0.000 & +0.000 & 0/0 \\
+\midrule
+\multirow{3}{*}{YaleB} & LOCAL & -4.088 & -3.217 & 20/20 \\
+& HARD & -0.428 & -0.368 & 2/2 \\
+& SHRINK & +0.005 & +0.001 & 0/0 \\
+\midrule
+\multirow{3}{*}{COIL20} & LOCAL & +2.958 & +2.171 & 0/0 \\
+& HARD & +2.958 & +2.171 & 0/0 \\
+& SHRINK & +1.881 & +1.420 & 0/0 \\
+\midrule
+\multirow{3}{*}{COIL100} & LOCAL & +2.709 & +1.769 & 0/0 \\
+& HARD & +2.709 & +1.769 & 0/0 \\
+& SHRINK & +2.472 & +1.628 & 0/0 \\
+\midrule
+\multirow{3}{*}{Optdigits} & LOCAL & +0.305 & +0.736 & 0/0 \\
+& HARD & +0.305 & +0.736 & 0/0 \\
+& SHRINK & +0.255 & +0.623 & 0/0 \\
+\midrule
+\multirow{3}{*}{MNIST} & LOCAL & +0.813 & +1.573 & 0/0 \\
+& HARD & +0.813 & +1.573 & 0/0 \\
+& SHRINK & +0.744 & +1.434 & 0/0 \\
+\bottomrule
+\end{tabular}
+
+\vspace{1mm}
+\parbox{0.98\textwidth}{\footnotesize
+Changes are absolute percentage points relative to BASE over 20 paired trials on unlabeled samples. Losses are counted relative to BASE.}
+\end{table*}

@@ -1,0 +1,47 @@
+CGC-GOCNMF shrinkage sensitivity audit
+Runs per dataset: 20
+Datasets: PIE, YaleB, COIL100
+F grid: 3 5 10
+kappa grid: 0.0 0.5 1.0 1.5
+
+PIE F=3 kappa=0.0: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+PIE F=3 kappa=0.5: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+PIE F=3 kappa=1.0: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+PIE F=3 kappa=1.5: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+PIE F=5 kappa=0.0: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+PIE F=5 kappa=0.5: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+PIE F=5 kappa=1.0: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+PIE F=5 kappa=1.5: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+PIE F=10 kappa=0.0: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+PIE F=10 kappa=0.5: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+PIE F=10 kappa=1.0: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+PIE F=10 kappa=1.5: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+YaleB F=3 kappa=0.0: theta=0.100000, fallback=18/20, dACC=-0.004275, ACC losses=2, dNMI=-0.003676, NMI losses=2
+YaleB F=3 kappa=0.5: theta=0.040249, fallback=19/20, dACC=-0.001235, ACC losses=1, dNMI=-0.001220, NMI losses=1
+YaleB F=3 kappa=1.0: theta=0.030499, fallback=19/20, dACC=-0.000526, ACC losses=1, dNMI=-0.000529, NMI losses=1
+YaleB F=3 kappa=1.5: theta=0.020748, fallback=19/20, dACC=-0.000206, ACC losses=1, dNMI=-0.000197, NMI losses=1
+YaleB F=5 kappa=0.0: theta=0.100000, fallback=18/20, dACC=-0.004275, ACC losses=2, dNMI=-0.003676, NMI losses=2
+YaleB F=5 kappa=0.5: theta=0.026583, fallback=19/20, dACC=-0.000412, ACC losses=1, dNMI=-0.000412, NMI losses=1
+YaleB F=5 kappa=1.0: theta=0.003167, fallback=19/20, dACC=+0.000046, ACC losses=0, dNMI=+0.000011, NMI losses=0
+YaleB F=5 kappa=1.5: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+YaleB F=10 kappa=0.0: theta=0.050000, fallback=19/20, dACC=-0.002789, ACC losses=1, dNMI=-0.002182, NMI losses=1
+YaleB F=10 kappa=0.5: theta=0.025689, fallback=19/20, dACC=-0.000389, ACC losses=1, dNMI=-0.000399, NMI losses=1
+YaleB F=10 kappa=1.0: theta=0.001378, fallback=19/20, dACC=+0.000023, ACC losses=0, dNMI=-0.000009, NMI losses=1
+YaleB F=10 kappa=1.5: theta=0.000000, fallback=20/20, dACC=+0.000000, ACC losses=0, dNMI=+0.000000, NMI losses=0
+COIL100 F=3 kappa=0.0: theta=1.000000, fallback=0/20, dACC=+0.027092, ACC losses=0, dNMI=+0.017685, NMI losses=0
+COIL100 F=3 kappa=0.5: theta=0.962390, fallback=0/20, dACC=+0.027208, ACC losses=0, dNMI=+0.017945, NMI losses=0
+COIL100 F=3 kappa=1.0: theta=0.924781, fallback=0/20, dACC=+0.025554, ACC losses=0, dNMI=+0.016793, NMI losses=0
+COIL100 F=3 kappa=1.5: theta=0.887171, fallback=0/20, dACC=+0.024131, ACC losses=0, dNMI=+0.016001, NMI losses=0
+COIL100 F=5 kappa=0.0: theta=1.000000, fallback=0/20, dACC=+0.027092, ACC losses=0, dNMI=+0.017685, NMI losses=0
+COIL100 F=5 kappa=0.5: theta=0.951700, fallback=0/20, dACC=+0.026846, ACC losses=0, dNMI=+0.017742, NMI losses=0
+COIL100 F=5 kappa=1.0: theta=0.903400, fallback=0/20, dACC=+0.024715, ACC losses=0, dNMI=+0.016281, NMI losses=0
+COIL100 F=5 kappa=1.5: theta=0.855101, fallback=0/20, dACC=+0.022892, ACC losses=0, dNMI=+0.015037, NMI losses=0
+COIL100 F=10 kappa=0.0: theta=1.000000, fallback=0/20, dACC=+0.027092, ACC losses=0, dNMI=+0.017685, NMI losses=0
+COIL100 F=10 kappa=0.5: theta=0.954148, fallback=0/20, dACC=+0.027023, ACC losses=0, dNMI=+0.017828, NMI losses=0
+COIL100 F=10 kappa=1.0: theta=0.908297, fallback=0/20, dACC=+0.025254, ACC losses=0, dNMI=+0.016654, NMI losses=0
+COIL100 F=10 kappa=1.5: theta=0.862445, fallback=0/20, dACC=+0.023054, ACC losses=0, dNMI=+0.015216, NMI losses=0
+
+FINITE_OUTPUT_PASS=1
+THETA_RANGE_PASS=1
+REFERENCE_F5_KAPPA1_PRESENT_PASS=1
+TWENTY_SEED_SENSITIVITY_COMPLETE=1

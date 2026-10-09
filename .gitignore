@@ -1,0 +1,25 @@
+results/reproduced_*/
+*.asv
+*.m~
+*~
+desktop.ini
+Thumbs.db
+.DS_Store
+*.synctex.gz
+*.aux
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+manuscript/*.log
+matlab_crash_dump.*
+java.log.*
+
+# Restricted or license-unverified datasets: obtain locally; never commit.
+data/main_six/PIE.mat
+data/main_six/YaleB.mat
+data/main_six/COIL20_Obj.mat
+data/main_six/COIL100_Obj.mat
+data/main_six/MNIST_Han.mat
+data/neu_cls/NEU_CLS_32x32.mat
+data/neu_cls/NEU_CLS_LBP59_4x4.mat

@@ -1,0 +1,2 @@
+dataset,method,runs,unlabeled_ACC_mean,unlabeled_ACC_sd,unlabeled_NMI_mean,unlabeled_NMI_sd,all_ACC_mean,all_ACC_sd,all_NMI_mean,all_NMI_sd,labeled_ACC_mean,objective_nonincrease_pass,run_seconds_mean
+COIL20,SNMFWLP,3,0.918974358974359,0.0109418401504369,0.937631148871352,0.0063518687097327,0.926851851851852,0.00987805013581105,0.940493205333762,0.0063052191801077,1,0,2.151206

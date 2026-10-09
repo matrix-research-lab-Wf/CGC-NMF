@@ -1,0 +1,31 @@
+\subsection{Unified comparison of direct clustering methods}
+\label{subsec:unified_direct_comparison}
+
+We conducted a unified comparison among GNMFLD, GOCNMF, and
+CGC-GOCNMF. All three methods obtain clustering assignments directly from the
+largest coordinate in each row of the learned representation matrix; no
+\(K\)-means algorithm or external classifier was used. For every dataset and
+trial, the methods used the same data normalization, labeled subset, random
+seed, initial nonnegative factors, and evaluation code. Ten percent of the
+samples in each class were selected as labeled data. The primary ACC and NMI
+values were computed only on the remaining unlabeled samples.
+
+GNMFLD was implemented as
+\[
+\min_{U,V\geq0}
+ \|X-UV^{T}\|_{F}^{2}
+ +\alpha\|P_{\Omega}(V)-P_{\Omega}(Y)\|_{F}^{2}
+ +\beta\operatorname{Tr}(V^{T}LV),
+\]
+with a binary five-nearest-neighbor graph and 200 multiplicative-update
+iterations. GOCNMF and CGC-GOCNMF used the previously fixed dataset-specific
+values of \(p\) and the graph coefficient, with 50 iterations. CGC-GOCNMF
+differed from GOCNMF only through the out-of-fold conservative calibration of
+the graph.
+
+The GNMFLD parameters for PIE, YaleB, COIL20, and MNIST were taken from
+published follow-up reproductions of this baseline. Directly verifiable
+dataset-specific values were not located for COIL100 and Optdigits; therefore,
+the corresponding values were transferred from COIL20 and MNIST,
+respectively, and are explicitly marked as transferred rather than
+original-paper settings. All results were averaged over 20 paired trials.

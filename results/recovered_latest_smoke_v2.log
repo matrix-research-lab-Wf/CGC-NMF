@@ -1,0 +1,47 @@
+ 
+要开始，请键入 doc。
+有关产品信息，请访问 www.mathworks.com。
+ 
+
+UNIFIED THREE-DIRECT-METHOD EXPERIMENT -- 2026-07-31
+Methods: GNMFLD, GOCNMF, CGC-GOCNMF
+Runs per dataset: 1
+Primary evaluation: unlabeled samples only
+No K-means; direct row-wise argmax
+
+
+Loading COIL20: D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\data\main_six\COIL20_Obj.mat
+  kNN block 1:256 of 1440
+  kNN block 257:512 of 1440
+  kNN block 513:768 of 1440
+  kNN block 769:1024 of 1440
+  kNN block 1025:1280 of 1440
+  kNN block 1281:1440 of 1440
+Graphs: GOC p=3, GNMFLD p=5, time=0.51s, nnz=5094/5094/8544
+
+COIL20 seed 20260617 (1/1)
+GNMFLD ACC/NMI=0.8900/0.9138; GOCNMF=0.9277/0.9392; CGC=0.9446/0.9543; theta=0.7469
+
+Finished.
+Raw: D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\results\recovered_latest_smoke_v2\common_stop_COIL20\common_stop_core_1seed_raw.csv
+Summary: D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\results\recovered_latest_smoke_v2\common_stop_COIL20\common_stop_core_1seed_summary.csv
+Paired: D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\results\recovered_latest_smoke_v2\common_stop_COIL20\common_stop_core_1seed_paired.csv
+Decision: D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\results\recovered_latest_smoke_v2\common_stop_COIL20\common_stop_core_1seed_decision.txt
+ONE_SEED_SMOKE_PASS=1 (see decision file for full audit)
+
+SNMFWLP COMMON-STOP EXPERIMENT
+Runs per dataset: 1
+Seeds: 20260617 to 20260617
+Primary evaluation: unlabeled samples only
+Direct row-wise argmax; no K-means
+Iterations: 1000
+
+
+Loading COIL20: D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\data\main_six\COIL20_Obj.mat
+COIL20 seed 20260617 (1/1)
+  ACC_U=0.674615 NMI_U=0.756063 ACC_L=0.964286 obj_ratio=8.79449e-06 time=10.88s
+
+SNMFWLP_COMPLETE=1
+RAW=D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\results\recovered_latest_smoke_v2\snmfwlp_COIL20\SNMFWLP_common_stop_1seed_raw.csv
+SUMMARY=D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\results\recovered_latest_smoke_v2\snmfwlp_COIL20\SNMFWLP_common_stop_1seed_summary.csv
+DECISION=D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\results\recovered_latest_smoke_v2\snmfwlp_COIL20\SNMFWLP_common_stop_1seed_decision.txt

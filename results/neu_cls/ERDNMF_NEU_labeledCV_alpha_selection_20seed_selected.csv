@@ -1,0 +1,2 @@
+dataset,selected_alpha,validation_ACC_mean,validation_NMI_mean,selection_rule,pilot_seeds,ready
+NEU-CLS,1000,0.237407407407407,0.322531541035923,pooled-labeled-only-CV-among-objective-admissible-candidates,20260711-20260730,1

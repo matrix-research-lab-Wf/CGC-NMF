@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or reproducibility package, please cite the associated manuscript."
+title: "CGC-NMF reproducibility package"
+type: software
+authors:
+  - family-names: Sun
+    given-names: Deshu
+  - family-names: Wang
+    given-names: Feng
+repository-code: "https://github.com/matrix-research-lab-Wf/CGC-NMF"
+license: MIT
+version: "0.1.0-pre-release"
+date-released: 2026-10-09
+preferred-citation:
+  type: article
+  title: "Evidence-guided conservative graph calibration for direct semi-supervised clustering"
+  authors:
+    - family-names: Sun
+      given-names: Deshu
+    - family-names: Wang
+      given-names: Feng
+  year: 2026
+  notes: "Manuscript under preparation; update journal, DOI, volume, and pages after publication."

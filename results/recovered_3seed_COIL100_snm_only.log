@@ -1,0 +1,25 @@
+ 
+要开始，请键入 doc。
+有关产品信息，请访问 www.mathworks.com。
+ 
+
+SNMFWLP COMMON-STOP EXPERIMENT
+Runs per dataset: 3
+Seeds: 20260617 to 20260619
+Primary evaluation: unlabeled samples only
+Direct row-wise argmax; no K-means
+Iterations: 1000
+
+
+Loading COIL100: D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\data\main_six\COIL100_Obj.mat
+COIL100 seed 20260617 (1/3)
+  ACC_U=0.872154 NMI_U=0.930943 ACC_L=1.000000 obj_ratio=1.97858e-06 time=92.04s
+COIL100 seed 20260618 (2/3)
+  ACC_U=0.862462 NMI_U=0.925216 ACC_L=1.000000 obj_ratio=1.94193e-06 time=67.54s
+COIL100 seed 20260619 (3/3)
+  ACC_U=0.870615 NMI_U=0.928818 ACC_L=1.000000 obj_ratio=1.98573e-06 time=89.26s
+
+SNMFWLP_COMPLETE=1
+RAW=D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\results\recovered_six_dataset_3seed\snmfwlp_COIL100\SNMFWLP_common_stop_3seed_raw.csv
+SUMMARY=D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\results\recovered_six_dataset_3seed\snmfwlp_COIL100\SNMFWLP_common_stop_3seed_summary.csv
+DECISION=D:\codex\CGC_GOCNMF_PAA_reproducibility_20261008\results\recovered_six_dataset_3seed\snmfwlp_COIL100\SNMFWLP_common_stop_3seed_decision.txt

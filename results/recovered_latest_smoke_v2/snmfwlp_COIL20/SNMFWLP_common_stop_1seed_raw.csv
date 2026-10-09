@@ -1,0 +1,2 @@
+dataset,seed,method,data_file,samples,features,classes,labeled_count,alpha,beta,parameter_source,iterations,unlabeled_ACC,unlabeled_NMI,all_ACC,all_NMI,labeled_ACC,validation_ACC,objective_initial,objective_final,objective_nonincrease,stop_residual,converged,graph_seconds,run_seconds
+COIL20,20260617,SNMFWLP,COIL20_Obj.mat,1440,1024,20,140,1,1,disjoint-labeled-only-pilot,1000,0.674615384615385,0.756063325424431,0.702777777777778,0.766371913947767,0.964285714285714,NaN,38321894.7916036,337.02160538239,0,0.000118168190441522,0,0.297909,10.876195

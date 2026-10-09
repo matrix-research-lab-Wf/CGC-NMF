@@ -1,0 +1,23 @@
+\subsection{Engineering application to steel surface defect clustering}
+\label{subsec:neu_application}
+
+To examine the engineering relevance of conservative graph calibration, we
+considered semi-supervised clustering of hot-rolled steel-strip surface
+defects using the public NEU-CLS database. The database contains six defect
+categories with 300 grayscale images per category. Each image was resized to
+$32\times32$, vectorized into a nonnegative column, and normalized to unit
+Euclidean norm. No pretrained representation or external classifier was
+used.
+
+We evaluated label fractions of $5\%$, $10\%$, and $20\%$ per class. For
+every fraction, 20 paired trials used identical labeled samples and initial
+factors across GNMFLD, GOCNMF, and CGC-GOCNMF. Clustering labels were
+obtained directly by the largest coordinate of the learned representation.
+ACC, NMI, and ARI were computed only on unlabeled samples. We additionally
+recorded the calibration coefficient, exact-fallback frequency, and aggregate
+class-normalized confusion matrices.
+
+The Stage-1 protocol fixes $p=5$ and $\alpha=10$ for GOCNMF and
+CGC-GOCNMF, and uses $p=5$, $\alpha=10^{4}$, and $\beta=10$ for GNMFLD.
+These are pre-specified pilot settings and are not claimed to be NEU-optimal.
+No unlabeled ground-truth label is used in parameter selection.

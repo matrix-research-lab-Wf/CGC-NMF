@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{GOCNMF and CGC-GOCNMF on NEU-CLS using nonnegative spatial uniform-LBP features.}\label{tab:neu_lbp}
+\small
+\begin{tabular}{clccc}
+\toprule
+Label rate & Method & ACC (\%) & NMI (\%) & ARI (\%) \\
+\midrule
+\multirow{2}{*}{5\%} & GOCNMF & 27.42$\pm$2.37 & 10.55$\pm$1.86 & 3.19$\pm$2.38 \\
+& CGC-GOCNMF & 27.42$\pm$2.37 & 10.55$\pm$1.86 & 3.19$\pm$2.38 \\
+\midrule
+\multirow{2}{*}{10\%} & GOCNMF & 32.66$\pm$1.81 & 14.51$\pm$1.13 & 5.58$\pm$1.53 \\
+& CGC-GOCNMF & 33.38$\pm$2.19 & 15.81$\pm$1.51 & 5.77$\pm$1.59 \\
+\midrule
+\multirow{2}{*}{20\%} & GOCNMF & 38.53$\pm$1.11 & 18.74$\pm$1.40 & 9.39$\pm$0.98 \\
+& CGC-GOCNMF & 41.39$\pm$1.20 & 22.76$\pm$1.25 & 10.91$\pm$1.03 \\
+\bottomrule
+\end{tabular}
+
+\vspace{1mm}
+\parbox{0.98\linewidth}{\footnotesize
+Values are mean percentages $\pm$ sample standard deviations over 20 paired trials on unlabeled samples. Paired Wilcoxon tests are reported separately.}
+\end{table}

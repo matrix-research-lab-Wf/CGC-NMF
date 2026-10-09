@@ -1,0 +1,2 @@
+dataset,goc_p,goc_alpha,goc_iterations,gnmfld_p,gnmfld_alpha,gnmfld_beta,gnmfld_iterations,gnmfld_parameter_source
+MNIST,4,10,1000,5,100000,10,1000,published-follow-up

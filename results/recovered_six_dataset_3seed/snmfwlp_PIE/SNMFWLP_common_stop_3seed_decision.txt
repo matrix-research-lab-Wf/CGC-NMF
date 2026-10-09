@@ -1,0 +1,13 @@
+SNMFWLP COMMON-STOP AUDIT
+runs=3
+seeds=20260617-20260619
+label_fraction=0.10 with at least two labeled samples per class
+evaluation=unlabeled samples only
+assignment=row-wise argmax; no K-means
+maximum_iterations=1000
+implementation=public SNMFWLP updates plus disclosed integration wrapper
+
+PIE alpha=100 source=disjoint-labeled-only-pilot ACC=0.960655+-0.006583 NMI=0.966942+-0.004221 labeled_ACC=1.000000 objective_nonincrease=3/3 time=36.860s
+
+FINITE_OUTPUT_PASS=1
+FINAL_READY=0

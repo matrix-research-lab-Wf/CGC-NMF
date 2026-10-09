@@ -1,0 +1,16 @@
+ERDNMF NEU-CLS FORMAL TABLE-6 AUDIT
+formal_seeds=20260731-20260731
+label_rates=0.05 0.10 0.20
+alpha=1000
+iterations=200
+evaluation=unlabeled samples only
+assignment=row-wise argmax; no K-means
+unlabeled_truth_used_for_parameter_selection=0
+
+rate=0.05 ACC=0.259649+-0.000000 NMI=0.068037+-0.000000 ARI=0.049424+-0.000000 labeled_ACC=1.000000 objective_nonincrease=1/1 time=6.784s
+rate=0.10 ACC=0.224074+-0.000000 NMI=0.068873+-0.000000 ARI=0.049150+-0.000000 labeled_ACC=1.000000 objective_nonincrease=1/1 time=6.843s
+rate=0.20 ACC=0.244444+-0.000000 NMI=0.058728+-0.000000 ARI=0.041267+-0.000000 labeled_ACC=1.000000 objective_nonincrease=1/1 time=6.961s
+
+FINITE_OUTPUT_PASS=1
+OBJECTIVE_NONINCREASE_PASS=1
+FINAL_READY=0

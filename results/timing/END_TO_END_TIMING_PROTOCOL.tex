@@ -1,0 +1,29 @@
+\subsection{Unified end-to-end computational cost}
+\label{subsec:end_to_end_time}
+
+We conducted a dedicated timing experiment because the training times recorded
+during the accuracy comparison did not include all method-specific
+preprocessing. For each method, the reported end-to-end cost was defined as
+\[
+T_{\mathrm{total}}
+=
+T_{\mathrm{graph}}
++
+T_{\mathrm{calibration}}
++
+T_{\mathrm{factorization}}.
+\]
+Here, \(T_{\mathrm{calibration}}=0\) for GNMFLD and GOCNMF, whereas for
+CGC-GOCNMF it contains the complete five-fold out-of-fold Brier evaluation
+and computation of \(\theta\). Data loading, common column normalization, and
+post-training evaluation were excluded.
+
+Each method independently reconstructed its graph from the normalized data
+inside the timed block. No graph, calibration result, or factorization output
+was shared between methods. In particular, CGC-GOCNMF performed an independent
+factorization even when \(\theta=0\). The three methods used the same labeled
+subset and initial factors in each paired trial, while their execution order
+was randomized reproducibly to reduce fixed-order and cache effects. Before
+measurement, every method was run once as an untimed warm-up on each dataset.
+The final results are reported as the mean and standard deviation over 20
+paired trials on the same hardware and MATLAB installation.

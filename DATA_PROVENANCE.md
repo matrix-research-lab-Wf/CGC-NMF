@@ -1,0 +1,40 @@
+# Data provenance and redistribution decisions
+
+Checked on 2026-10-09. A public download page is not treated as permission to
+redistribute a repackaged MAT file. Files without an explicit compatible license
+are therefore excluded from the public Git history.
+
+| Expected local file | Dataset | Authoritative source and terms | Redistribution decision | Public repository action |
+|---|---|---|---|---|
+| `data/main_six/PIE.mat` | CMU PIE | [CMU Robotics Institute record](https://publications.ri.cmu.edu/the-cmu-pose-illumination-and-expression-pie-database-of-human-faces); the page retains copyright and says works may not be reposted without permission | Not permitted on the evidence located | Excluded; retain checksum and format below |
+| `data/main_six/YaleB.mat` | Extended Yale Face Database B | [Official Yale page](https://www.cs.yale.edu/cvc/projects/yalefacesB/yalefacesB.html); research use is allowed, but incorporation into a publicly distributed larger database requires Yale permission | Public redistribution not permitted without permission | Excluded |
+| `data/main_six/COIL20_Obj.mat` | COIL-20 | [Columbia CAVE library](https://www.cs.columbia.edu/CAVE/software/softlib/coil-20.php) | Official download is available, but no explicit redistribution license was located | Excluded pending written permission |
+| `data/main_six/COIL100_Obj.mat` | COIL-100 | [Columbia CAVE library](https://www.cs.columbia.edu/CAVE/software/softlib/coil-100.php) | Official download is available, but no explicit redistribution license was located | Excluded pending written permission |
+| `data/main_six/Optdigits_Han.mat` | Optical Recognition of Handwritten Digits | [UCI dataset DOI 10.24432/C50P49](https://doi.org/10.24432/C50P49), licensed CC BY 4.0 | Redistribution of the attributed transformed copy is allowed under CC BY 4.0 | Included with attribution and modification notice |
+| `data/main_six/MNIST_Han.mat` | MNIST | [Creators' MNIST page](https://yann.lecun.org/exdb/mnist/) provides downloads but does not display an explicit license grant | Redistribution license not verified from the authoritative page | Excluded |
+| `data/neu_cls/NEU_CLS_32x32.mat` | NEU-CLS | [Official NEU page](https://faculty.neu.edu.cn/songkc/en/zdylm/263265/list/) provides downloads and requests citation but does not state an explicit redistribution license | Redistribution license not verified from the authoritative page | Excluded; users download from the official page and run the preparation script |
+| `data/neu_cls/NEU_CLS_LBP59_4x4.mat` | Locally derived NEU-CLS LBP features | Derived from NEU-CLS images | Derivative status does not remove source-image restrictions | Excluded; regenerate locally |
+
+## Expected local-file checksums and shapes
+
+These values identify the exact author-side matrices used for the archived
+results. They do not grant redistribution permission.
+
+| File | Size (bytes) | SHA-256 | Main arrays |
+|---|---:|---|---|
+| `PIE.mat` | 2,583,084 | `e8e4e447d60e783a5257b51dca738725d39361b7633be9edab7ee643c1c8f5b1` | `fea` 2856x1024, `gnd` 2856x1 |
+| `YaleB.mat` | 2,214,688 | `3fbbda4eb781b9bb28025189677b6727706e114eb0215bbfd718f1f4fcb54b99` | `fea` 2414x1024, `gnd` 2414x1 |
+| `COIL20_Obj.mat` | 1,793,116 | `11c5a6346590bacc41a8ad9606fbda1ba41b808c3d4110f718806ea7816c32e1` | `fea` 1440x1024, `gnd` 1440x1 |
+| `COIL100_Obj.mat` | 4,827,065 | `3bdc7b2c67e3d8d517b88bc55b184f45270d588207a76ac68292fede2c0eb4b4` | `fea` 7200x1024, `gnd` 7200x1 |
+| `Optdigits_Han.mat` | 372,481 | `eb72a5fdfb25316b2170a870413a1b0616f7e8ef3024b65788210a59584fd31a` | `fea` 5620x64, `gnd` 5620x1 |
+| `MNIST_Han.mat` | 2,762,680 | `bde38026ced2c8c126e99ac3433bf3326b53bd5ae4cbe4f9b6b38f6b4f758539` | `fea` 6996x784, `gnd` 6996x1 |
+| `NEU_CLS_32x32.mat` | 13,773,527 | `86d3800dcc36b3b181677d360c268aa147c8a91b7a07b1ff67ce0c332366cdc1` | `fea` 1800x1024, `gnd` 1800x1 |
+| `NEU_CLS_LBP59_4x4.mat` | 822,465 | `5425d9a4ce8b59dfcec13c907f1145e54962e9c23ccdf743897965085368c052` | `fea` 1800x944, `gnd` 1800x1 |
+
+## Optdigits attribution and modification notice
+
+Original dataset: E. Alpaydin and C. Kaynak, *Optical Recognition of
+Handwritten Digits*, UCI Machine Learning Repository, 1998,
+<https://doi.org/10.24432/C50P49>, CC BY 4.0. The included MAT file combines the
+official training and test partitions and stores the features as rows in `fea`
+with labels in `gnd`; the underlying 64 integer-valued features are unchanged.

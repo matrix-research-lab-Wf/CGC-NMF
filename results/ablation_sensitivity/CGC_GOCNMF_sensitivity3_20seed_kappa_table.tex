@@ -1,0 +1,25 @@
+\begin{table*}[t]
+\centering
+\caption{Sensitivity to the shrinkage strength $\kappa$ with $F=5$.}\label{tab:kappa_sensitivity}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Dataset & $\kappa$ & $\bar\theta$ & Fallbacks & $\Delta$ACC & $\Delta$NMI & ACC/NMI losses \\
+\midrule
+\multirow{4}{*}{PIE} & 0.0 & 0.000 & 20/20 & +0.000 & +0.000 & 0/0 \\
+ & 0.5 & 0.000 & 20/20 & +0.000 & +0.000 & 0/0 \\
+ & 1.0 & 0.000 & 20/20 & +0.000 & +0.000 & 0/0 \\
+ & 1.5 & 0.000 & 20/20 & +0.000 & +0.000 & 0/0 \\
+\midrule
+\multirow{4}{*}{YaleB} & 0.0 & 0.100 & 18/20 & -0.428 & -0.368 & 2/2 \\
+ & 0.5 & 0.027 & 19/20 & -0.041 & -0.041 & 1/1 \\
+ & 1.0 & 0.003 & 19/20 & +0.005 & +0.001 & 0/0 \\
+ & 1.5 & 0.000 & 20/20 & +0.000 & +0.000 & 0/0 \\
+\midrule
+\multirow{4}{*}{COIL100} & 0.0 & 1.000 & 0/20 & +2.709 & +1.769 & 0/0 \\
+ & 0.5 & 0.952 & 0/20 & +2.685 & +1.774 & 0/0 \\
+ & 1.0 & 0.903 & 0/20 & +2.472 & +1.628 & 0/0 \\
+ & 1.5 & 0.855 & 0/20 & +2.289 & +1.504 & 0/0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

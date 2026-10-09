@@ -1,0 +1,28 @@
+ERDNMF dedicated Table-10 timing audit
+Runs per dataset: 20
+Seeds: 20260617-20260636
+Included: ERDNMF factorization with 200 iterations.
+Excluded: data loading, common column normalization, and post-training evaluation.
+Graph time=0 and calibration time=0 by model design.
+One untimed warm-up was performed on every dataset.
+
+PIE ERDNMF: total=19.0172+-0.0910 s, alpha=400
+YaleB ERDNMF: total=12.0492+-1.5805 s, alpha=1000
+COIL20 ERDNMF: total=5.2364+-0.0734 s, alpha=800
+COIL100 ERDNMF: total=58.9367+-9.1992 s, alpha=1000
+Optdigits ERDNMF: total=1.8752+-0.0281 s, alpha=600
+MNIST ERDNMF: total=24.4114+-2.5093 s, alpha=1000
+
+Environment
+MATLAB_VERSION=7.8.0.347 (R2009a)
+COMPUTER=PCWIN
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+NUMBER_OF_PROCESSORS=8
+
+Audit
+FINITE_TIMING_PASS=1
+POSITIVE_TIMING_PASS=1
+OBJECTIVE_NONINCREASE_PASS=1
+ERDNMF_TIMING_INTEGRITY_PASS=1
+TWENTY_SEED_ERDNMF_TIMING_COMPLETE=1

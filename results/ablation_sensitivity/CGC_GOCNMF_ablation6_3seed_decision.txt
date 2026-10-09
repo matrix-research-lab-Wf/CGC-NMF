@@ -1,0 +1,15 @@
+Six-dataset CGC-GOCNMF ablation audit
+Runs per dataset: 3
+Variants: BASE, LOCAL, HARD, SHRINK
+
+PIE: theta=0.000000, fallbacks=3/3, dACC local/hard/shrink=-0.018576/+0.000000/+0.000000, ACC losses=3/0/0, dNMI local/hard/shrink=-0.008841/+0.000000/+0.000000, NMI losses=3/0/0
+YaleB: theta=0.021110, fallbacks=2/3, dACC local/hard/shrink=-0.039933/-0.018595/+0.000305, ACC losses=3/1/0, dNMI local/hard/shrink=-0.030775/-0.014545/+0.000076, NMI losses=3/1/0
+COIL20: theta=0.717604, fallbacks=0/3, dACC local/hard/shrink=+0.025897/+0.025897/+0.016923, ACC losses=0/0/0, dNMI local/hard/shrink=+0.020973/+0.020973/+0.014251, NMI losses=0/0/0
+COIL100: theta=0.912599, fallbacks=0/3, dACC local/hard/shrink=+0.028205/+0.028205/+0.026769, ACC losses=0/0/0, dNMI local/hard/shrink=+0.019370/+0.019370/+0.018653, NMI losses=0/0/0
+Optdigits: theta=0.902880, fallbacks=0/3, dACC local/hard/shrink=+0.002568/+0.002568/+0.001975, ACC losses=0/0/0, dNMI local/hard/shrink=+0.006573/+0.006573/+0.005262, NMI losses=0/0/0
+MNIST: theta=0.941584, fallbacks=0/3, dACC local/hard/shrink=+0.006295/+0.006295/+0.005660, ACC losses=0/0/0, dNMI local/hard/shrink=+0.012545/+0.012545/+0.011477, NMI losses=0/0/0
+
+FINITE_OUTPUT_PASS=1
+THETA_RANGE_PASS=1
+SHRINK_NO_LOSS_OBSERVED=1
+THREE_SEED_ABLATION_INTEGRITY_PASS=1

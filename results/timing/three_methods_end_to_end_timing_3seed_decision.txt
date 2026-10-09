@@ -1,0 +1,42 @@
+Dedicated end-to-end timing audit
+Runs per dataset: 3
+Included: independent graph construction, complete CGC calibration, independent factorization.
+Excluded: common data loading, common column normalization, and post-training evaluation.
+Method execution order was randomized reproducibly per seed.
+CGC factorization was never reused from GOCNMF.
+
+PIE GNMFLD: graph=1.9667+-0.0518, calibration=0.0000+-0.0000, factorization=8.8480+-0.0814, total=10.8147+-0.0368 s
+PIE GOCNMF: graph=1.9438+-0.0441, calibration=0.0000+-0.0000, factorization=2.2061+-0.0831, total=4.1499+-0.0571 s
+PIE CGC-GOCNMF: graph=1.9484+-0.0038, calibration=0.3365+-0.0526, factorization=2.1820+-0.0419, total=4.4669+-0.0443 s
+YaleB GNMFLD: graph=1.2438+-0.0105, calibration=0.0000+-0.0000, factorization=4.8805+-0.0381, total=6.1243+-0.0480 s
+YaleB GOCNMF: graph=1.2406+-0.0401, calibration=0.0000+-0.0000, factorization=1.2092+-0.0051, total=2.4497+-0.0434 s
+YaleB CGC-GOCNMF: graph=1.2237+-0.0256, calibration=0.0465+-0.0004, factorization=1.2190+-0.0022, total=2.4892+-0.0274 s
+COIL20 GNMFLD: graph=0.3567+-0.0087, calibration=0.0000+-0.0000, factorization=1.8154+-0.0111, total=2.1721+-0.0122 s
+COIL20 GOCNMF: graph=0.3702+-0.0095, calibration=0.0000+-0.0000, factorization=0.4798+-0.0074, total=0.8500+-0.0077 s
+COIL20 CGC-GOCNMF: graph=0.3613+-0.0316, calibration=0.0180+-0.0027, factorization=0.4879+-0.0149, total=0.8673+-0.0178 s
+COIL100 GNMFLD: graph=19.4872+-4.2751, calibration=0.0000+-0.0000, factorization=32.3488+-4.8638, total=51.8360+-9.1354 s
+COIL100 GOCNMF: graph=19.6739+-4.4039, calibration=0.0000+-0.0000, factorization=9.1041+-1.6564, total=28.7780+-5.5292 s
+COIL100 CGC-GOCNMF: graph=19.3389+-4.4437, calibration=4.0410+-0.4071, factorization=8.0730+-1.5836, total=31.4529+-6.4327 s
+Optdigits GNMFLD: graph=7.9658+-0.0043, calibration=0.0000+-0.0000, factorization=0.5148+-0.0061, total=8.4806+-0.0048 s
+Optdigits GOCNMF: graph=7.9758+-0.0094, calibration=0.0000+-0.0000, factorization=0.1291+-0.0027, total=8.1050+-0.0069 s
+Optdigits CGC-GOCNMF: graph=7.9811+-0.0082, calibration=0.1953+-0.0116, factorization=0.1244+-0.0089, total=8.3007+-0.0148 s
+MNIST GNMFLD: graph=19.8684+-4.0598, calibration=0.0000+-0.0000, factorization=7.0683+-1.5597, total=26.9366+-5.6191 s
+MNIST GOCNMF: graph=19.5819+-3.8657, calibration=0.0000+-0.0000, factorization=1.8681+-0.4113, total=21.4500+-4.2711 s
+MNIST CGC-GOCNMF: graph=19.9844+-3.6493, calibration=0.4774+-0.0972, factorization=1.8769+-0.3827, total=22.3388+-4.1280 s
+
+Environment
+MATLAB_VERSION=7.8.0.347 (R2009a)
+COMPUTER=PCWIN
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+NUMBER_OF_PROCESSORS=8
+
+Audit
+FINITE_TIMING_PASS=1
+POSITIVE_TIMING_PASS=1
+COMPONENT_WALL_AGREEMENT_PASS=1
+MAX_COMPONENT_WALL_RELATIVE_GAP=2.09051653e-005
+OBJECTIVE_NONINCREASE_PASS=1
+CGC_CALIBRATION_INCLUDED_PASS=1
+END_TO_END_TIMING_INTEGRITY_PASS=1
+THREE_SEED_TIMING_INTEGRITY_PASS=1

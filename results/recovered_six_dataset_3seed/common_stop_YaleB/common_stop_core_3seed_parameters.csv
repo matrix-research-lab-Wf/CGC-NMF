@@ -1,0 +1,2 @@
+dataset,goc_p,goc_alpha,goc_iterations,gnmfld_p,gnmfld_alpha,gnmfld_beta,gnmfld_iterations,gnmfld_parameter_source
+YaleB,2,1000,1000,5,100000,100,1000,published-follow-up

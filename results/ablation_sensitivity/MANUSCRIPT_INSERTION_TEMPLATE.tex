@@ -1,0 +1,37 @@
+\subsection{Sensitivity to the calibration rule}
+\label{subsec:calibration_sensitivity}
+
+To examine whether the calibration depends critically on a single
+shrinkage setting, we considered
+\[
+\theta_{\kappa}=
+\begin{cases}
+(\Delta-\kappa s)_{+}/\Delta,&\Delta>0,\\
+0,&\Delta\le0,
+\end{cases}
+\]
+with \(\kappa\in\{0,0.5,1,1.5\}\), and varied the number of
+stratified folds over \(F\in\{3,5,10\}\). The value \(\kappa=0\)
+reduces to hard graph selection, whereas the proposed method uses
+\(\kappa=1\). PIE, YaleB, and COIL100 were fixed before this experiment
+to represent fallback, borderline, and clear-benefit regimes,
+respectively. Every configuration used the same labeled subsets and
+initial factors within each paired trial.
+
+% Insert:
+% CGC_GOCNMF_sensitivity3_20seed_kappa_table.tex
+% CGC_GOCNMF_sensitivity3_20seed_fold_table.tex
+
+\subsection{Six-dataset ablation}
+\label{subsec:ablation6}
+
+We compared four graph variants on all six benchmark datasets:
+BASE uses \(W^{(0)}\), LOCAL uses \(W^{(1)}\), HARD selects
+\(W^{(1)}\) when \(\Delta>0\) and otherwise uses \(W^{(0)}\), and
+SHRINK uses the proposed calibrated graph. All variants shared the same
+labeled subsets, factor initialization, graph support, regularization
+coefficient, and iteration count.
+
+% Insert:
+% CGC_GOCNMF_ablation6_20seed_table.tex
+% CGC_GOCNMF_ablation6_20seed_calibration_table.tex

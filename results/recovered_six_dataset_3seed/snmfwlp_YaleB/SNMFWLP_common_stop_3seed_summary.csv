@@ -1,0 +1,2 @@
+dataset,method,runs,unlabeled_ACC_mean,unlabeled_ACC_sd,unlabeled_NMI_mean,unlabeled_NMI_sd,all_ACC_mean,all_ACC_sd,all_NMI_mean,all_NMI_sd,labeled_ACC_mean,objective_nonincrease_pass,run_seconds_mean
+YaleB,SNMFWLP,3,0.615150129553422,0.00939677649248488,0.62416716126228,0.00332479967060279,0.651339409003038,0.00851315252239622,0.648403670478305,0.00296124480637553,1,0,13.819542

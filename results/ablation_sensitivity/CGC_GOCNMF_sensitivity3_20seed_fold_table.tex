@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\caption{Sensitivity to the number of folds with $\kappa=1$.}\label{tab:fold_sensitivity}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Dataset & $F$ & $\bar\theta$ & Fallbacks & $\Delta$ACC & $\Delta$NMI & ACC/NMI losses \\
+\midrule
+\multirow{3}{*}{PIE} & 3 & 0.000 & 20/20 & +0.000 & +0.000 & 0/0 \\
+ & 5 & 0.000 & 20/20 & +0.000 & +0.000 & 0/0 \\
+ & 10 & 0.000 & 20/20 & +0.000 & +0.000 & 0/0 \\
+\midrule
+\multirow{3}{*}{YaleB} & 3 & 0.030 & 19/20 & -0.053 & -0.053 & 1/1 \\
+ & 5 & 0.003 & 19/20 & +0.005 & +0.001 & 0/0 \\
+ & 10 & 0.001 & 19/20 & +0.002 & -0.001 & 0/1 \\
+\midrule
+\multirow{3}{*}{COIL100} & 3 & 0.925 & 0/20 & +2.555 & +1.679 & 0/0 \\
+ & 5 & 0.903 & 0/20 & +2.472 & +1.628 & 0/0 \\
+ & 10 & 0.908 & 0/20 & +2.525 & +1.665 & 0/0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

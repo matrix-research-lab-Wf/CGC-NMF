@@ -1,0 +1,99 @@
+CGC -> GNMFLD SECOND-PARENT TRANSFER -- HARMONIC FIXED
+======================================================
+
+PIE
+  mean theta       = 0.855466
+  theta SD         = 0.049008
+  exact fallbacks  = 0/20
+  stabilized folds W0/W1 = 0/0
+  GNMFLD ACC       = 93.2914 +/- 0.7773 %
+  CGC-GNMFLD ACC   = 93.9435 +/- 0.8012 %
+  mean dACC        = +0.6521 pp
+  ACC W/T/L        = 20/0/0
+  Holm p ACC       = 0.00002288818359375
+  GNMFLD NMI       = 94.4058 +/- 0.3948 %
+  CGC-GNMFLD NMI   = 95.1011 +/- 0.4320 %
+  mean dNMI        = +0.6954 pp
+  NMI W/T/L        = 20/0/0
+  Holm p NMI       = 0.00002288818359375
+
+YaleB
+  mean theta       = 0.907159
+  theta SD         = 0.028909
+  exact fallbacks  = 0/20
+  stabilized folds W0/W1 = 0/0
+  GNMFLD ACC       = 61.8519 +/- 1.3017 %
+  CGC-GNMFLD ACC   = 64.7508 +/- 1.3924 %
+  mean dACC        = +2.8989 pp
+  ACC W/T/L        = 20/0/0
+  Holm p ACC       = 0.00002288818359375
+  GNMFLD NMI       = 62.6262 +/- 1.0402 %
+  CGC-GNMFLD NMI   = 65.3098 +/- 1.0134 %
+  mean dNMI        = +2.6836 pp
+  NMI W/T/L        = 20/0/0
+  Holm p NMI       = 0.00002288818359375
+
+COIL20
+  mean theta       = 0.859516
+  theta SD         = 0.029120
+  exact fallbacks  = 0/20
+  stabilized folds W0/W1 = 0/0
+  GNMFLD ACC       = 88.7000 +/- 0.9806 %
+  CGC-GNMFLD ACC   = 90.9154 +/- 1.0404 %
+  mean dACC        = +2.2154 pp
+  ACC W/T/L        = 20/0/0
+  Holm p ACC       = 0.00002288818359375
+  GNMFLD NMI       = 91.3669 +/- 0.6807 %
+  CGC-GNMFLD NMI   = 93.0924 +/- 0.7784 %
+  mean dNMI        = +1.7255 pp
+  NMI W/T/L        = 20/0/0
+  Holm p NMI       = 0.00002288818359375
+
+COIL100
+  mean theta       = 0.944181
+  theta SD         = 0.019242
+  exact fallbacks  = 0/20
+  stabilized folds W0/W1 = 13/0
+  GNMFLD ACC       = 81.5992 +/- 0.7066 %
+  CGC-GNMFLD ACC   = 86.1662 +/- 0.5942 %
+  mean dACC        = +4.5669 pp
+  ACC W/T/L        = 20/0/0
+  Holm p ACC       = 0.00002288818359375
+  GNMFLD NMI       = 89.4772 +/- 0.2717 %
+  CGC-GNMFLD NMI   = 92.5349 +/- 0.3149 %
+  mean dNMI        = +3.0577 pp
+  NMI W/T/L        = 20/0/0
+  Holm p NMI       = 0.00002288818359375
+
+Optdigits
+  mean theta       = 0.874603
+  theta SD         = 0.044841
+  exact fallbacks  = 0/20
+  stabilized folds W0/W1 = 0/0
+  GNMFLD ACC       = 98.4021 +/- 0.1444 %
+  CGC-GNMFLD ACC   = 98.6391 +/- 0.1190 %
+  mean dACC        = +0.2370 pp
+  ACC W/T/L        = 20/0/0
+  Holm p ACC       = 0.00002288818359375
+  GNMFLD NMI       = 95.9309 +/- 0.2892 %
+  CGC-GNMFLD NMI   = 96.4966 +/- 0.2613 %
+  mean dNMI        = +0.5657 pp
+  NMI W/T/L        = 20/0/0
+  Holm p NMI       = 0.00002288818359375
+
+MNIST
+  mean theta       = 0.945407
+  theta SD         = 0.018002
+  exact fallbacks  = 0/20
+  stabilized folds W0/W1 = 0/0
+  GNMFLD ACC       = 93.4336 +/- 0.2771 %
+  CGC-GNMFLD ACC   = 94.2898 +/- 0.2773 %
+  mean dACC        = +0.8562 pp
+  ACC W/T/L        = 20/0/0
+  Holm p ACC       = 0.00002288818359375
+  GNMFLD NMI       = 85.5339 +/- 0.4441 %
+  CGC-GNMFLD NMI   = 87.1389 +/- 0.4661 %
+  mean dNMI        = +1.6050 pp
+  NMI W/T/L        = 20/0/0
+  Holm p NMI       = 0.00002288818359375
+

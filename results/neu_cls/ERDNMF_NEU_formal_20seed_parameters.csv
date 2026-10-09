@@ -1,0 +1,2 @@
+dataset,method,alpha,iterations,label_rates,formal_seeds,assignment,evaluation,parameter_selection
+NEU-CLS,ERDNMF,1000,200,0.05|0.10|0.20,20260731-20260750,row-wise-argmax,unlabeled-only,labeled-only-pilot-CV

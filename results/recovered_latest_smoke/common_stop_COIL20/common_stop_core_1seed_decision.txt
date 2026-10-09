@@ -1,0 +1,26 @@
+Unified three-direct-method experiment
+Runs per dataset: 1
+Methods: GNMFLD, GOCNMF, CGC-GOCNMF
+Primary metrics: unlabeled samples only
+Clustering rule: direct row-wise argmax
+K-means used: NO
+
+COIL20 GNMFLD: ACC=0.890000+-0.000000, NMI=0.913828+-0.000000, labeled_ACC=1.000000, theta=NaN, time=2.218s
+COIL20 GOCNMF: ACC=0.927692+-0.000000, NMI=0.939164+-0.000000, labeled_ACC=1.000000, theta=NaN, time=2.834s
+COIL20 CGC-GOCNMF: ACC=0.944615+-0.000000, NMI=0.954280+-0.000000, labeled_ACC=1.000000, theta=0.746882, time=3.326s
+
+Paired comparisons
+COIL20 CGC-GOCNMF_minus_GOCNMF: dACC=+0.016923 (1/0/0), dNMI=+0.015115 (1/0/0)
+COIL20 CGC-GOCNMF_minus_GNMFLD: dACC=+0.054615 (1/0/0), dNMI=+0.040451 (1/0/0)
+COIL20 GOCNMF_minus_GNMFLD: dACC=+0.037692 (1/0/0), dNMI=+0.025336 (1/0/0)
+
+Audit
+FINITE_RESULTS_PASS=1
+DIRECT_ARGMAX_PASS=1
+OBJECTIVE_NONINCREASE_PASS=1
+GOC_FIXED_LABEL_PASS=1
+GNMFLD_TRANSFER_PARAMETER_DATASETS=0
+THREE_METHOD_INTEGRITY_PASS=1
+ONE_SEED_SMOKE_PASS=1
+
+Editorial note: COIL100 and Optdigits use explicitly marked same-domain GNMFLD parameter transfers. The final manuscript must either retain this disclosure or replace them with directly verified author-code/original-paper settings.

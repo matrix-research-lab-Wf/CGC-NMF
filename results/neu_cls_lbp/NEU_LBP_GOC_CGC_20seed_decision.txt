@@ -1,0 +1,30 @@
+NEU-CLS LBP GOCNMF/CGC-GOCNMF audit
+Feature: LBP_{8,1}^{u2}, 4-by-4 cells, 944 dimensions
+Runs per label rate: 20
+Graph construction seconds: 0.646324
+Direct row-wise argmax; K-means used: NO
+
+Label 5% GOCNMF: ACC=0.274240+-0.023670, NMI=0.105542+-0.018565, ARI=0.031865+-0.023816
+Label 5% CGC-GOCNMF: ACC=0.274240+-0.023670, NMI=0.105542+-0.018565, ARI=0.031865+-0.023816, theta=0.000000+-0.000000, fallback=20/20
+  ACC: delta=+0.000000, wins/ties/losses=0/20/0, p=1, Holm=1
+  NMI: delta=+0.000000, wins/ties/losses=0/20/0, p=1, Holm=1
+  ARI: delta=+0.000000, wins/ties/losses=0/20/0, p=1, Holm=1
+
+Label 10% GOCNMF: ACC=0.326574+-0.018085, NMI=0.145077+-0.011315, ARI=0.055762+-0.015292
+Label 10% CGC-GOCNMF: ACC=0.333796+-0.021908, NMI=0.158057+-0.015129, ARI=0.057727+-0.015852, theta=0.357380+-0.334146, fallback=8/20
+  ACC: delta=+0.007222, wins/ties/losses=12/8/0, p=0.00048828125, Holm=0.0029296875
+  NMI: delta=+0.012980, wins/ties/losses=12/8/0, p=0.00048828125, Holm=0.0029296875
+  ARI: delta=+0.001965, wins/ties/losses=9/8/3, p=0.026855469, Holm=0.10742188
+
+Label 20% GOCNMF: ACC=0.385347+-0.011056, NMI=0.187352+-0.013966, ARI=0.093945+-0.009772
+Label 20% CGC-GOCNMF: ACC=0.413924+-0.012048, NMI=0.227646+-0.012463, ARI=0.109144+-0.010303, theta=0.811164+-0.066379, fallback=0/20
+  ACC: delta=+0.028576, wins/ties/losses=20/0/0, p=1.9073486e-006, Holm=1.7166138e-005
+  NMI: delta=+0.040294, wins/ties/losses=20/0/0, p=1.9073486e-006, Holm=1.7166138e-005
+  ARI: delta=+0.015198, wins/ties/losses=19/0/1, p=3.8146973e-006, Holm=2.6702881e-005
+
+FINITE_OUTPUT_PASS=1
+THETA_RANGE_PASS=1
+FIXED_LABELED_ROWS_PASS=1
+OBJECTIVE_NONINCREASE_PASS=1
+EXACT_FALLBACK_IDENTITY_PASS=1
+NEU_LBP_TWENTY_SEED_FORMAL_COMPLETE=1

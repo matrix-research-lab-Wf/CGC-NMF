@@ -1,0 +1,7 @@
+RECOVERED SIX-DATASET THREE-SEED AUDIT
+PIE: common_integrity=1; snm_finite=1; snm_converged=3/3; snm_objective_nonincrease=3/3
+YaleB: common_integrity=1; snm_finite=1; snm_converged=3/3; snm_objective_nonincrease=0/3
+COIL20: common_integrity=1; snm_finite=1; snm_converged=3/3; snm_objective_nonincrease=0/3
+Optdigits: common_integrity=1; snm_finite=1; snm_converged=3/3; snm_objective_nonincrease=0/3
+MNIST: common_integrity=1; snm_finite=1; snm_converged=3/3; snm_objective_nonincrease=0/3
+COIL100: common_integrity=1; snm_finite=1; snm_converged=3/3; snm_objective_nonincrease=0/3
