@@ -8,10 +8,12 @@ $failures = New-Object System.Collections.Generic.List[string]
 $required = @(
     'README.md', 'LICENSE', 'LICENSE_SCOPE.md', 'CITATION.cff',
     'DATA_PROVENANCE.md', 'FINAL_MANUSCRIPT_RESULT_AUDIT.md',
-    'manuscript\Evidence-guided conservative graph calibration.tex',
-    'manuscript\Evidence-guided conservative graph calibration.pdf',
     'run_smoke_test.m', 'run_public_smoke_test.m', 'THIRD_PARTY_NOTICES.md',
     'data\README.md', 'data\main_six\Optdigits_Han.mat',
+    'code\data_preparation\prepare_all_official_data_R2019a.m',
+    'code\data_preparation\prepare_COIL_from_official_R2019a.m',
+    'code\data_preparation\prepare_MNIST_Han_R2019a.m',
+    'code\data_preparation\mnist_han_indices.csv',
     'results\cgc_gnmfld_transfer\CGC_GNMFLD_exact_wilcoxon_holm.csv',
     'results\main_comparison\CGC_minus_GOCNMF_bootstrap_10000.csv'
 )
@@ -46,15 +48,6 @@ $oversized = Get-ChildItem -LiteralPath $repoRoot -Recurse -File -Force |
     Where-Object { $_.FullName -notlike "*\.git\*" -and $_.Length -gt 95MB }
 foreach ($file in $oversized) {
     $failures.Add("File exceeds the 95 MB safety limit: $($file.FullName)")
-}
-
-$texPath = Join-Path $repoRoot 'manuscript\Evidence-guided conservative graph calibration.tex'
-if (Test-Path -LiteralPath $texPath) {
-    $falseSentence = Select-String -LiteralPath $texPath -SimpleMatch `
-        'SNMFWLP reached the stopping threshold in only a subset of runs'
-    if ($falseSentence) {
-        $failures.Add('The audited false SNMFWLP stopping sentence is still present.')
-    }
 }
 
 if ($failures.Count -gt 0) {

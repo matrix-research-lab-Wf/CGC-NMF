@@ -32,6 +32,8 @@ Target repository: <https://github.com/matrix-research-lab-Wf/CGC-NMF>
 - [x] Regenerate `MANIFEST_SHA256.csv` after the final file set is frozen.
 - [x] Add the public repository URL to the manuscript's data and code availability
   statement. The immutable commit identifier will be recorded in the Git history.
+- [x] Add official download/conversion programs and the recovered MNIST_Han row
+  indices; verify exact MATLAB R2019a equality for MNIST_Han and COIL20.
 
 ## Current decision
 

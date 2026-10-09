@@ -38,6 +38,7 @@ checked on a clean MATLAB R2019a installation.
 - `code/graph_stress`: controlled graph-corruption experiments
 - `code/timing`: prescribed-protocol timing experiments
 - `code/neu_cls`: NEU-CLS experiments and figure scripts
+- `code/data_preparation`: official download, deterministic conversion, and validation programs
 - `code/legacy_runs`: older dataset-specific experiment scripts retained for audit
 - `code/recovered_latest`: recovered common-stopping and SNMFWLP scripts
 - `data/main_six`: redistributable Optdigits matrix; other expected paths are documented
@@ -49,7 +50,6 @@ checked on a clean MATLAB R2019a installation.
 - `results/neu_cls_lbp`: recovered 20-seed LBP robustness evidence
 - `results/erdnmf_timing`: recovered ERDNMF timing evidence
 - `figures`: the seven figures used by the current manuscript
-- `manuscript`: exact current PDF and LaTeX source supplied by the author
 
 The current table-by-table evidence audit is `FINAL_MANUSCRIPT_RESULT_AUDIT.md`.
 It must be read before citing or redistributing the archived results.
@@ -68,6 +68,13 @@ The script runs the common-stopping comparison on the included Optdigits matrix.
 New outputs are written to `results/reproduced_public_smoke`. The complete
 six-dataset smoke test, `run_smoke_test`, requires the locally acquired matrices
 listed in `data/README.md`.
+
+To acquire and prepare the other datasets without unofficial mirrors, see
+`data/README.md` and run `prepare_all_official_data_R2019a`. Exact
+pixel-and-label reproduction is verified for MNIST_Han and COIL20. The
+repository explicitly reports that legacy preprocessing identity is not established for
+COIL100, PIE, and YaleB rather than presenting structural compatibility as an
+exact reproduction.
 
 ## Full archived protocols
 

@@ -27,18 +27,17 @@ $common | Export-Csv -LiteralPath (Join-Path $root 'results\recovered_common_sto
 $snm | Export-Csv -LiteralPath (Join-Path $root 'results\recovered_snmfwlp_3seed_summary.csv') -NoTypeInformation -Encoding UTF8
 $audit | Set-Content -LiteralPath (Join-Path $root 'results\recovered_3seed_audit.txt') -Encoding UTF8
 
-$gitRoot = Join-Path $root '.git'
-$manifest = Get-ChildItem -LiteralPath $root -Recurse -File -Force |
-    Where-Object {
-        $_.Name -ne 'MANIFEST_SHA256.csv' -and
-        -not $_.FullName.StartsWith($gitRoot, [System.StringComparison]::OrdinalIgnoreCase)
-    } |
+$releasePaths = & git -C $root ls-files --cached --others --exclude-standard
+$manifest = $releasePaths |
+    Where-Object { $_ -ne 'MANIFEST_SHA256.csv' } |
     ForEach-Object {
-        $relative = $_.FullName.Substring($root.Length + 1)
+        $relative = $_
+        $fullPath = Join-Path $root $relative
+        $file = Get-Item -LiteralPath $fullPath
         [pscustomobject]@{
             path = $relative
-            bytes = $_.Length
-            sha256 = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+            bytes = $file.Length
+            sha256 = (Get-FileHash -LiteralPath $fullPath -Algorithm SHA256).Hash.ToLowerInvariant()
         }
     }
 $manifest | Sort-Object path | Export-Csv -LiteralPath (Join-Path $root 'MANIFEST_SHA256.csv') -NoTypeInformation -Encoding UTF8
